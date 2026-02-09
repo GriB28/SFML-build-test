@@ -21,13 +21,17 @@ int main() {
     window.setFramerateLimit(24);
 
     Font font;
-    if (!font.openFromFile("Kuro Regilar.otf")) return 1;
+    if (!font.openFromFile("../Kuro Regular.otf")) return 1;
 
     Text frames_text(font);
-    frames_text.setCharacterSize(10);
-    frames_text.setPosition(Vector2f{620, 355});
+    frames_text.setCharacterSize(50);
+    frames_text.setPosition(Vector2f{615, 355});
 
     while (window.isOpen()) {
+        while (const auto event = window.pollEvent())
+            if (event->is<sf::Event::Closed>())
+                window.close();
+
         window.clear();
 
         frames_text.setString(to_string(frames));
