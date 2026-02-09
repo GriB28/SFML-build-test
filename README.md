@@ -2,17 +2,8 @@
 Тестовый проект для отладки скачанных пакетов стека SFML3
 
 #
-### SFML 3.0.2
-- Windows 10+
-  * На выбор есть [два варианта](https://www.sfml-dev.org/download/sfml/3.0.2/) скачивания:
-`Visual C++` и `GCC 14.2.0 MinGW`
-  * При выборе сборки для MinGW необходимо установить в точности совпадающую версию
+### Компилятор [GNU g++ 14.2.0](https://github.com/brechtsanders/winlibs_mingw/releases?page=4)
 
-- Linux
-  * Рекомендуется использовать стандартный пакет, устанавливаемый с помощью утилиты APT: `apt install libsfml-dev`
+### Графическая библиотека [SFML 3.0.2](https://www.sfml-dev.org/download/sfml/3.0.2/)
 
-- macOS
-  * Пакетный менеджер Homebrew: `brew install sfml@3.0.2`
-
-#
-### 
+### Система автоматизации сборки [CMake 3.28+](https://cmake.org/download/)
